@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index_css.css" rel="stylesheet">
+    <title>ROT 13 Cipher</title>
+</head>
+
+<body>
+    <div class="rot_card_container">
+        <div class="rot_information_container">
+            <div class="rot_header">
+                <h1 class="header">ROT 13, rotate by 13 places</h1>
+                <h2 class="url">Learn more about <a href="https://en.wikipedia.org/wiki/ROT13" class="link">ROT13</a></h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input_container">
+                <p class="subtitle">Input</p>
+                <textarea id="input" placeholder="Sample Text" onkeyup="shiftIt()"></textarea>
+            </div>
+            <div class="input_container">
+                <p class="subtitle">Output</p>
+                <textarea id="output" readonly placeholder="Sample Text"></textarea>
+                <button type="button">Copy</button>
+                <button type="button">Clear</button>
+            </div>
+        </div>
+
+        <p class="footer">Created by Su-Hoon D. Cho</p>
+    </div>
+
+    <script src="index.js"/>
+</body>
+
+</html>
